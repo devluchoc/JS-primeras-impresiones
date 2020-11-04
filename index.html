@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="prueba"></div>
+    <script >
+var divPrueba = document.getElementById('prueba')
+divPrueba.innerHTML = `
+    <p> Esto es un parrafo </p>
+    <p> Esto es otro parrafo </p>
+    <a> Esto es un link </a>
+    <div> Esto es un nuevo div </div>
+`
+    </script>
+</body>
+</html>  --> 
+ 
+
+<body>
+    <script>
+    var valor = 0;
+    function Sumar(){
+        var sumar = document.getElementById("contador")
+        valor++
+        sumar.innerHTML = valor;
+    }
+    function Restar(){
+        if(document.getElementById("contador").innerText !== "0"){
+            var restar = document.getElementById("contador")
+            valor--
+            restar.innerHTML = valor;
+        }
+    }   
+    </script>
+
+    <div>
+        <h1 id="contador">0</h1>
+    </div>
+
+    <button onclick="Restar()">-</button>
+    <button onclick="Sumar()">+</button>
+
+</body>
